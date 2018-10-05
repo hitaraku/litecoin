@@ -1,0 +1,10 @@
+[on mac]
+brew install gnu-sed
+find ./src -type f | xargs gsed -i "s/Litecoin/Hitacoin/g"
+find ./src -type f | xargs gsed -i "s/litecoin/hitacoin/g"
+find ./src -type f | xargs gsed -i "s/litecoind/hitacoind/g"
+find ./src -type f | xargs gsed -i "s/LTC/HITC/g"
+
+[download on ubuntu]
+sudo apt-get -y install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev
+sudo apt-get -y install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git libssl-dev
